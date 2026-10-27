@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Vacation</title>
+    <link rel="stylesheet" href="/styles/vacation.css">
+    <script src="/js/vacation.js" defer></script>
+  
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <h1>Book Your Dream Vacation</h1>
+        </div>
+        <form id="vacation-form" action="/confirm-request" method="get">
+
+            <!-- destination -->
+            <div id="destination-selection">
+            <span class="err" id="err-destination"> Please select a destination</span>
+            <label>Destination</label>
+            <select id="destination" name="destination">
+                <option value="none"> Choose a destination...</option>
+                <option value="nyc">New York City, USA</option>
+                <option value="tokyo">Tokyo, Japan</option>
+                <option value="paris">Paris, France</option>
+                <option value="nyc">Bali, Indonesia</option>
+                <option value="la">Los Angeles, USA</option>
+            </select>
+            </div>
+
+            <!-- departure -->
+             <div id="depart-date">
+                <label for="depart">Departure Date</label>
+                <input type="date" id="depart" name="depart">
+             </div>
+
+             <!-- number of travelers -->
+              <div id="num-travelers">
+                <span class="err" id="err-num">Select a Valid Number of Travelers</span>
+                <label for="travelers">Number of Travelers</label>
+                <input type="number" id="travelers" name="travelers">
+              </div>
+
+              <button type ="submit" id="submit-button">Find My Vacation</button>
+
+        </form>
+
+    </div>
+   <footer></footer>
+    
+</body>
+</html>

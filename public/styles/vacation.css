@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+#main{
+    border-radius: 20px;
+    padding: 15px;
+    margin: 60px;
+}
+body{
+    background-color: cadetblue;
+}
+#header{
+    padding: 60px;
+    background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=400&fit=crop");
+}
+
+#vacation-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+#destination-selection{
+    flex: 1 1 100%;
+}
+
+#depart-date, 
+#num-travelers{
+    flex: 1 1 50%;
+    flex-direction: column;
+    gap: 8px;
+}
+#submit-button {
+    align-self:baseline;
+    background-color: cadetblue;
+    color: black;
+    padding: 5px;
+}
+
+select{
+    width: 100%;
+    padding: 10px;
+}
+
+
+form{
+    background-color: white;
+    padding: 30px;
+   
+}
+
+.err{ 
+    color: darkred;
+    display: none;
+
+}
+
